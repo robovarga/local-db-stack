@@ -12,13 +12,13 @@ This project is a simple Docker Compose setup to run a MySQL database and Admine
 
 1. **Clone this repository** to your local environment:
    ```bash
-   git clone https://your-repository-url.git
-   cd your-project-name
+   git clone git@github.com:robovarga/local-db-stack.git
+   cd local-db-stack
    ```
 
 2. **Run Docker Compose** with the following command:
    ```bash
-   docker-compose up -d
+   docker compose up -d
    ```
 
    This command will start two containers:
@@ -42,7 +42,7 @@ This project is a simple Docker Compose setup to run a MySQL database and Admine
 To stop the running containers, run:
 
 ```bash
-docker-compose down
+docker compose down
 ```
 
 This will stop and remove the containers but keep the MySQL data intact because of the volume.
